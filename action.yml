@@ -1,0 +1,16 @@
+name: Private Repository Action
+description: >
+  This action utilizes an existing GitHub App to grant permissions in a workflow to access private repositories.
+
+inputs:
+  gh_app_id:
+    description: The App ID of the GitHub App.
+    required: true
+  gh_private_key:
+    description: The Private Key of the GitHub App.
+    required: true
+
+runs:
+  using: composite
+
+  steps: []
